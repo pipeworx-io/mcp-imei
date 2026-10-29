@@ -1,0 +1,34 @@
+[
+  {
+    "name": "validate_imei",
+    "description": "Validate an IMEI (15 digits, with Luhn check) or IMEISV (16 digits, no check). Keyless/offline. Returns validity and the parts: TAC (Type Allocation Code, first 8), serial number, and check digit. Spaces/dashes ignored. Validates the number, not the device.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "imei": {
+          "type": "string",
+          "description": "A 15-digit IMEI or 16-digit IMEISV, e.g. \"490154203237518\"."
+        }
+      },
+      "required": [
+        "imei"
+      ]
+    }
+  },
+  {
+    "name": "imei_check_digit",
+    "description": "Compute the Luhn check digit for the first 14 digits of an IMEI (use to complete or repair an IMEI).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "digits": {
+          "type": "string",
+          "description": "The first 14 digits (no check digit)."
+        }
+      },
+      "required": [
+        "digits"
+      ]
+    }
+  }
+]
