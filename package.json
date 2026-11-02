@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-imei",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "IMEI validation MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "imei",
     "gatewaySlug": "imei",
-    "sourceHash": "v1-beede493278be4fccac0bc74faa103cbe45347b402f255336944b77cd5fbccff",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-dfe7586203a62264f2706f9766e916b75324235ed92e3ec825c11bcf0cd7266f",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
